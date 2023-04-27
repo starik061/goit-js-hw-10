@@ -3,7 +3,7 @@ export function renderCountriesList(coutriesArray) {
   let coutriesListHTML = coutriesArray
     .map(
       ({ flags, name }) =>
-        `<p><img href="${flags.svg}" width="20px" height="20px"><span>${name.official}</span></p>`
+        `<p><img src="${flags.svg}" width="20px" height="20px"><span> ${name.official}</span></p>`
     )
     .join('');
 
@@ -16,7 +16,7 @@ export function renderOneCountry(coutriesArray) {
   let coutriesListHTML = coutriesArray
     .map(
       ({ flags, name, capital, population, languages }) =>
-        `<p><img href="${flags.svg}" width="20px" height="20px"><span>${name.official}</span><span>${capital}</span><span>${population}</span><span>${languages}</span></p>`
+        `<p><img src="${flags.svg}" width="20px" height="20px"><span> ${name.official}</span><span> ${capital}</span><span> ${population}</span><span>${languages}</span></p>`
     )
     .join('');
 
